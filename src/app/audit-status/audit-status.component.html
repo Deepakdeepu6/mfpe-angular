@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+
+        </div>
+        <div class="col-6">
+            <h3>Audit Result</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Audit Id</th>
+                        <th>Project Execution Status</th>
+                        <th>Remedial Action Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngIf="response.projectExecutionStatus=='RED'" class="table-danger">
+                        <td>{{response.auditId}}</td>
+                        <td>{{response.projectExecutionStatus}}</td>
+                        <td>{{response.remedialActionDuration}}</td>
+                    </tr>
+                    
+                    <tr *ngIf="response.projectExecutionStatus=='GREEN'" class="table-success">
+                        <td>{{response.auditId}}</td>
+                        <td>{{response.projectExecutionStatus}}</td>
+                        <td>{{response.remedialActionDuration}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+
+    </div>
+    <div class="col-4">
+      <form #projectform="ngForm" (ngSubmit)="saveProjectdetails(requestdata)">
+      
+        <div class="form-group ">
+            <label for="projectName"><h6> Project Name :</h6></label>
+            <input  type="text" name="projectName" [(ngModel)]="requestdata.ProjectName"
+            id="projectName" class="form-control" required="projectName.touched">
+        </div>
+        <div class="form-group ">
+            <label for="applicationOwnerName"><h6>Application Manager Name :</h6></label>
+            <input type="text" name="applicationOwnerName" [(ngModel)]="requestdata.ApplicationOwnerName" id="applicationOwnerName" class="form-control" required>
+        </div>
+        <br>
+        
+        <div class="form-group ">
+            <button type="submit" class="btn btn-primary"  [disabled]="projectform.invalid ||(projectform.valid && responseCheckFlag)">Fetch Audit Response</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-4">
+
+    </div>
+  </div>
+</div>
+  
