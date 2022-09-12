@@ -4,6 +4,7 @@ import { Component, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuditService } from '../audit.service';
 import { ThrowStmt } from '@angular/compiler';
+import { Question } from '../Models/Question';
 
 @Component({
   selector: 'app-checklist',
@@ -11,10 +12,14 @@ import { ThrowStmt } from '@angular/compiler';
   styleUrls: ['./checklist.component.css']
 })
 export class ChecklistComponent implements OnInit {
+ questionsjson!:Question;
 
   auditType: string;
   auditDate: Date;
   questions: string[];
+  questionId: string[];
+  questionAuditType: string[];
+  questionAuditResponse: string[];
   responses: Array<string>;
   responseObject: auditDetails;
   auditTypeStatus = false;
@@ -29,6 +34,9 @@ export class ChecklistComponent implements OnInit {
   {
     this.auditType = ' ';
     this.questions = [];
+    this.questionId = [];
+    this.questionAuditType = [];
+    this.questionAuditResponse = [];
     this.auditDate = new Date();
     this.responses = new Array<string>(5);
     this.responseObject = new auditDetails();
@@ -77,7 +85,17 @@ export class ChecklistComponent implements OnInit {
   this.httpClient.get<any>("http://localhost:9300/checklist/AuditCheckListQuestions/" + this.auditType,
     {headers: new HttpHeaders({
     }).set("Authorization", "Bearer " + localStorage.getItem("jwt"))}).subscribe(data => {
-      this.questions = data;
+      console.log(data);
+      this.questionsjson=data;
+      console.log(this.questionsjson);
+
+      for(var i=0;i<data.length;i++){
+        // this.questionId.push(data[i].questionId)
+        this.questions.push(data[i].question)
+        // this.questionAuditType.push(data[i].auditType)
+        // this.questionAuditResponse.push(data[i].response)
+      }
+     console.log( this.questions )
     },err =>
     {
       //console.log(err);
@@ -95,7 +113,7 @@ export class ChecklistComponent implements OnInit {
     console.log(this.responses);
     this.responseObject.auditType = this.auditType;
     this.responseObject.auditDate = this.auditDate;
-    this.responseObject.ListOfQuestions = this.responses;
+    this.responseObject.auditQuestions = this.responses;
     console.log(this.responseObject);
     this.auditSeverityPortalFlag=true;
     this.auditDetailsFlag=false;

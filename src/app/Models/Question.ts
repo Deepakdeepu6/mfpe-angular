@@ -1,8 +1,8 @@
 export class Question{
 
      question_id!:number;
-     audit_type!:string;
      audit_question!:string;
-     audit_response!:string;
+     audit_type!:string;
+     audit_response!:string|null;
 
 }

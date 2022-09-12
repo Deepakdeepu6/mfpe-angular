@@ -2,13 +2,13 @@ export class auditDetails
 {
     auditType:string;
     auditDate:Date;
-    ListOfQuestions:string[];
+    auditQuestions:string[];
 
     constructor()
     {
         this.auditType="";
         this.auditDate = new Date(); 
-        this.ListOfQuestions=[];
+        this.auditQuestions=[];
     }
 
 }

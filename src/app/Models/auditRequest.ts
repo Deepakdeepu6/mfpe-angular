@@ -3,8 +3,7 @@ import { auditDetails } from './auditDetails';
 export class auditRequest 
 {
     //ProjectId: number = 0;
-    ProjectName: string = '';
-    ProjectManagerName: string|null = '' ;
-    ApplicationOwnerName: string = '';
+    projectName!: string ;
+    managerName!: string|null ;
     auditDetail: auditDetails = new auditDetails();
 }

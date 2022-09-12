@@ -52,14 +52,19 @@
         <table *ngIf="questions.length!=0" class="table table-responsive table-striped">
           <thead class="thead-dark">
             <tr>
+             
               <th>Questions</th>
+              
               <th>Yes</th>
               <th>No</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let question of questions; let i=index;">
+            <tr *ngFor="let question of questions;let i=index;">
+              
               <td>{{question}}</td>
+           
+  
               <td>
                 <div class="radio">
                   <label>

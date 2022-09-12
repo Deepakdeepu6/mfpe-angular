@@ -47,10 +47,9 @@ export class LoginComponent implements OnInit {
   formSubmitEvent()
   {
     
-
-      
      
       localStorage.setItem("username",this.username);
+      console.log(this.loginDetailsObject);
       this.httpClient.post("http://localhost:9100/auth/authenticate", this.loginDetailsObject,{responseType:'text'}).subscribe((response: any) => {
         const token = (<any>response);
 
