@@ -1,30 +1,27 @@
-<div class="container">
+<app-amsheader></app-amsheader>
+<div class="container  mt-5">
   <div class="row">
-    <div class="col-4">
-
-    </div>
-    <div class="col-4">
+    
+    <div class="col-12 second ">
       <form #projectform="ngForm" (ngSubmit)="saveProjectdetails(requestdata)">
       
         <div class="form-group ">
-            <label for="projectName"><h6> Project Name :</h6></label>
+            <label for="projectName"><h6> Project Name </h6></label>
             <input  type="text" name="projectName" [(ngModel)]="requestdata.projectName"
             id="projectName" class="form-control" required="projectName.touched">
         </div>
         <div class="form-group ">
-            <label for="applicationOwnerName"><h6>Application Manager Name :</h6></label>
+            <label for="applicationOwnerName"><h6>Application Manager Name </h6></label>
             <input type="text" name="applicationOwnerName" [(ngModel)]="requestdata.managerName" id="applicationOwnerName" class="form-control" required>
         </div>
         <br>
         
-        <div class="form-group ">
+        <div class="form-group text-center ">
             <button type="submit" class="btn btn-primary"  [disabled]="projectform.invalid ||(projectform.valid && responseCheckFlag)">Fetch Audit Response</button>
         </div>
       </form>
     </div>
-    <div class="col-4">
-
-    </div>
+   
   </div>
 </div>
   

@@ -1,4 +1,78 @@
-.container
-{
-    padding-top: 20%;
+body {
+    background-color: #D6EAF8;
+}
+
+.row {
+
+
+    width: 100%;
+    margin: 200px auto;
+
+
+}
+
+.left {
+    margin: auto;
+    text-align: center;
+
+}
+
+.left .symbol {
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    letter-spacing: 5px;
+    font-family: verdana, sans-serif;
+    color: #008000;
+}
+
+.left .content {
+    font-size: 30px;
+    font-weight: 150;
+    font-family: verdana, sans-serif;
+    color: #000000;
+    margin: auto;
+
+}
+
+/* @media only screen and (max-width:600px)
+{   .left .symbol,.left .content
+    {
+        
+    font-size:22px;
+    
+       
+    }
+    .left .content
+    {
+      font-size:20px;
+    font-weight:bold;
+
+    }
+} */
+.right {
+
+    width: 100%;
+
+
+}
+
+.right form {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    max-width: 500px;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.right form small {
+    font-style: italic;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+.form-control {
+    height: 50px;
 }

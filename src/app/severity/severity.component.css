@@ -1,4 +1,17 @@
-.container
-{
-    padding-top: 10%;
+
+.container{
+    display: flex;
+    justify-content: center;
 }
+
+
+
+.second form {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+   
+    background-color: #ffffff;
+    width: 100%;
+    padding: 50px;
+
+}
+
