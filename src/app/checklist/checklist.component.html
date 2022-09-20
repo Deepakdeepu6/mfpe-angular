@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Dangrek&family=IM+Fell+DW+Pica&family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
 <app-amsheader></app-amsheader>
 <div class="container mt-4" id="checklistcontainer" *ngIf="auditDetailsFlag">
   <div class="row">
@@ -7,7 +8,7 @@
         <fieldset class="form-group mt-3 ">
           <div class="row">
             <div class="col-4">
-              <legend class="col-form-label col-sm-2 pt-0">Audit_type</legend>
+              <legend class="col-form-label col-sm-2 pt-0">Audit_type:</legend>
 
             </div>
             <div class="col-sm-8">
@@ -31,9 +32,9 @@
         </fieldset>
         <div class="form-group row">
           <div class="col-4">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Audit_date</label>
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Audit_date:</label>
           </div>
-          <div class="col-sm-8">
+          <div class="col-sm-8 date">
             <input type="date" name="auditDate" id="auditDate" class="form-control " [(ngModel)]="auditDate"
             required>
           </div>
@@ -85,7 +86,7 @@
       </form>
     </div> -->
 
-    <div class="col-8 second">
+    <div class="col-8 second mb-3">
 
       <form #checklistresponse="ngForm" *ngIf="questions.length!=0">
 

@@ -1,6 +1,23 @@
 body {
     font-family: 'lato', sans-serif;
   }
+  label,legend,.date{
+    font-size: 20px;
+    font-weight: 100;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+
+  .form-check-label{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .li{
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 20px;
+  }
   .con {
     max-width: 1000px;
     margin-left: auto;

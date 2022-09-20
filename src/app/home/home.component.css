@@ -6,3 +6,11 @@
 .card-header{
     text-transform: uppercase;
 }
+.first{
+    font-family: 'Dangrek', cursive;
+}
+li{
+	font-family: 'Cinzel', serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}

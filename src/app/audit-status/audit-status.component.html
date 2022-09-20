@@ -1,3 +1,5 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Dangrek&family=Fredoka+One&family=IM+Fell+DW+Pica&family=Paytone+One&family=Permanent+Marker&family=Saira+Stencil+One&family=Special+Elite&display=swap" rel="stylesheet">
 <app-amsheader></app-amsheader>
 <div class="container mt-5">
     <div class="row">
@@ -13,13 +15,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngIf="response.projectExecutionStatus=='RED'" class="table-danger">
+                    <tr *ngIf="response.projectExecutionStatus=='RED'" class="table-d">
                         <td>{{response.auditId}}</td>
                         <td>{{response.projectExecutionStatus}}</td>
                         <td>{{response.remedialActionDuration}}</td>
                     </tr>
                     
-                    <tr *ngIf="response.projectExecutionStatus=='GREEN'" class="table-success">
+                    <tr *ngIf="response.projectExecutionStatus=='GREEN'" class="table-s">
                         <td>{{response.auditId}}</td>
                         <td>{{response.projectExecutionStatus}}</td>
                         <td>{{response.remedialActionDuration}}</td>

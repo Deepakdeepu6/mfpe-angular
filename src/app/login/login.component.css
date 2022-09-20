@@ -1,6 +1,11 @@
 body {
     background-color: #D6EAF8;
 }
+.form-control{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-transform: uppercase;
+    font-weight:500;
+}
 
 .row {
 

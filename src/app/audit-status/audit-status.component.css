@@ -5,6 +5,11 @@
 h3
 {
     padding-left: 25%;
+    font-family: 'Fredoka One', cursive;
+}
+th{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 .second  {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -13,4 +18,14 @@ h3
     width: 100%;
     padding: 20px;
 
+}
+td{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 20px;
+}
+.table-d{
+    color:red;
+}
+.table-s{
+    color:green;
 }

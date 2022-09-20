@@ -12,8 +12,17 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+ 
 }
-
+.logo{
+	font-family: 'Saira Stencil One', cursive;
+	letter-spacing: 3px;
+	word-spacing: 2px;
+	font-weight:500;
+	color:darkblue;
+	margin: 0;
+	font-size: 2.0em;
+}
 
 h2,
 h3,
@@ -27,20 +36,17 @@ a {
 
 
 
-.logo {
-	margin: 0;
-	font-size: 1.45em;
-}
+
 
 .main-nav {
 	margin-top: 5px;
-
+    
 }
 .logo a,
 .main-nav a {
-	padding: 10px 15px;
+	padding:  15px;
 	text-transform: uppercase;
-	text-align: center;
+	
 	display: block;
 }
 
@@ -68,8 +74,11 @@ a {
 	border-radius: 5px;
 }
 
-
-
+ul{
+	font-family: 'Special Elite', cursive;
+	font-size: 20px;
+	font-weight:bold;
+}
 
 @media (min-width: 769px) {
 	.header,
