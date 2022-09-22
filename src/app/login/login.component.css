@@ -3,11 +3,13 @@ body {
     min-height: 100vh;
     height:auto;
     margin:0;
+    
 }
 .form-control{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-transform: uppercase;
     font-weight:500;
+
 }
 
 .row {
@@ -15,6 +17,7 @@ body {
 
     width: 100%;
     margin: 200px auto;
+    
 
 
 }
@@ -30,15 +33,15 @@ body {
     font-weight: bold;
     margin: auto;
     letter-spacing: 5px;
-    font-family: verdana, sans-serif;
-    color: #008000;
+    font-family: helvetica;
+    color: #43F4BC;
 }
 
 .left .content {
     font-size: 30px;
     font-weight: 150;
     font-family: verdana, sans-serif;
-    color: #000000;
+    color:#43F4BC;
     margin: auto;
 
 }
